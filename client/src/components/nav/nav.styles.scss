@@ -1,0 +1,16 @@
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5rem;
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      padding: 1rem 1.5rem;
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
