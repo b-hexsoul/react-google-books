@@ -1,0 +1,11 @@
+.search-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 1px solid black;
+
+  h2 {
+    margin: 0.5rem 0;
+  }
+}
