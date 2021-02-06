@@ -57,6 +57,8 @@ passport.use(
         } else {
           //if not, create a new user
           new db.User({
+            name: { first: profile.name.givenName, last: profile.name.familyName },
+            email: profile.emails[0].value,
             googleId: profile.id,
           })
             .save()
