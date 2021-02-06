@@ -1,10 +1,12 @@
 import BookList from "../../components/book-list/book-list.component";
-let books = [{ title: "nothing" }];
+import { useState } from "react";
 
 const Saved = () => {
+  const [savedBooks, setSavedBooks] = useState([]);
+
   return (
     <div>
-      <BookList books={books} />
+      <BookList books={savedBooks} />
     </div>
   );
 };

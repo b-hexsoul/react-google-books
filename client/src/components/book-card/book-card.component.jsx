@@ -1,8 +1,10 @@
+import "./book-card.styles.scss";
+
 const BookCard = ({ book }) => {
   let { title, authors, averageRating, pageCount, imageLinks, description, subtitle } = book.volumeInfo;
 
   return (
-    <div className="book-card">
+    <div className="book-card p-1 my-1">
       <div className="book-card-header">
         <div className="book-info">
           <h3 className="title">{title}</h3>
@@ -15,9 +17,9 @@ const BookCard = ({ book }) => {
         </div>
       </div>
 
-      <div className="book-details">
-        <img src={imageLinks.thumbnail} alt="" className="cover-image" />
-        <p className="book-description">{description}</p>
+      <div className="book-card-details">
+        {imageLinks && <img src={imageLinks.thumbnail} alt="" className="book-card-image" />}
+        <p className="book-description">{description ? description : "No description available for this book"}</p>
       </div>
     </div>
   );

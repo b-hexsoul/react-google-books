@@ -1,0 +1,20 @@
+.book-card {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-details {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+
+  &-image {
+    margin-right: 2rem;
+  }
+}
