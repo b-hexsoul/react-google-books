@@ -1,15 +1,17 @@
 import "./search-bar.styles.scss";
 
-const SearchBar = () => {
+const SearchBar = ({ handleSearch }) => {
   return (
-    <div className="search-container">
+    <div className="search-container p-1 my-1">
       <h2>Book Search</h2>
-      <form>
+      <form onSubmit={(e) => handleSearch(e)}>
         <div className="search-bar">
           <input type="search" name="search" id="search" />
           <label htmlFor="search">Search</label>
         </div>
-        <button type="submit">Search</button>
+        <button type="submit" >
+          Search
+        </button>
       </form>
     </div>
   );

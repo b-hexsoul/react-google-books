@@ -1,5 +1,12 @@
+import BookList from "../../components/book-list/book-list.component";
+let books = [{ title: "nothing" }];
+
 const Saved = () => {
-  return <div></div>;
+  return (
+    <div>
+      <BookList books={books} />
+    </div>
+  );
 };
 
 export default Saved;
